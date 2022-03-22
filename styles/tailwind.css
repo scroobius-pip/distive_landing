@@ -15,7 +15,9 @@
  
     body {
        @apply bg-sky-50;
-      
+         /* background: url(/texture_background.png) rgba(255, 0, 150, 0.3); */
+        /* cover background with */
+        background: url(/noise_bg.svg);
     }
 
 }

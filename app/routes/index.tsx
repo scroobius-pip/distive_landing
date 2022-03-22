@@ -11,11 +11,11 @@ function FeatureBox({ title, features, icon }: FeatureBoxProps) {
     {/* feature container */}
     <div className='relative -left-4' >
       {icon}
-      <h2 className='inline ml-2'>{title}</h2>
+      <h2 className='inline ml-2 capitalize'>{title}</h2>
     </div>
     <div className='mt-4'>
       <ul className='list-disc'>
-        {features.map(feature => <li className='py-1 hover:animate-pulse opacity-80 ' key={feature}>{feature}</li>)}
+        {features.map(feature => <li className='py-1 hover:animate-pulse opacity-100 ' key={feature}>{feature}</li>)}
       </ul>
     </div>
   </div>;
@@ -92,7 +92,7 @@ export default function Index() {
           </h2>
           <div className='mt-10 text-center md:text-left mb-10'>
             {/* CTA */}
-            <a className='py-3  font-medium shadow-md px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/demo'>{`See Demo >`}</a>
+            <a className='py-3  font-medium shadow-md  px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/demo'>{`See Demo >`}</a>
             <a className='py-3 font-medium shadow-md  px-4 ml-4  border-black text-white bg-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/getting-started'>{`Get Started >`}</a>
           </div>
         </div>
@@ -103,20 +103,22 @@ export default function Index() {
       </div>
       <div className='mt-32'>
         <h2 className='text-center text-3xl font-bold'>Features</h2>
-        <div className='gap-12  mt-10 bg-black p-10 rounded-md shadow-xl' style={{
+        <div className='gap-12 relative w-full h-full  mt-10 p-10 rounded-md shadow-xl' style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          backgroundImage: 'url(/transparent_static.png)',
+          background: 'url(/noise.svg)', 
+          backgroundColor:'#141414'
         }}>
+        
           {/* features */}
           {features.map(feature => <FeatureBox key={feature.title} {...feature} />)}
         </div>
       </div>
       <div className='mt-20 text-center'>
-            {/* CTA */}
-            <a className='py-3  font-medium shadow-md px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/demo'>{`See Demo >`}</a>
-            <a className='py-3 font-medium shadow-md  px-4 ml-4  border-black text-white bg-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/getting-started'>{`Get Started >`}</a>
-          </div>
+        {/* CTA */}
+        <a className='py-3  font-medium shadow-md px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/demo'>{`See Demo >`}</a>
+        <a className='py-3 font-medium shadow-md  px-4 ml-4  border-black text-white bg-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/getting-started'>{`Get Started >`}</a>
+      </div>
     </div>
   );
 }
