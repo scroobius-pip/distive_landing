@@ -1,3 +1,4 @@
+import GradientCircle from '~/components/GradientCircle';
 import * as FeatureIcons from '~/components/LandingIcons'
 
 interface FeatureBoxProps {
@@ -7,7 +8,8 @@ interface FeatureBoxProps {
 }
 
 function FeatureBox({ title, features, icon }: FeatureBoxProps) {
-  return <div className='text-white' >
+  return <div className='text-white ' >
+  
     {/* feature container */}
     <div className='relative -left-4' >
       {icon}
@@ -15,7 +17,7 @@ function FeatureBox({ title, features, icon }: FeatureBoxProps) {
     </div>
     <div className='mt-4'>
       <ul className='list-disc'>
-        {features.map(feature => <li className='py-1 hover:animate-pulse opacity-100 ' key={feature}>{feature}</li>)}
+        {features.map(feature => <li className='py-1 hover:animate-pulse capitalize ' key={feature}>{feature}</li>)}
       </ul>
     </div>
   </div>;
@@ -50,7 +52,7 @@ const features: FeatureBoxProps[] = [
     features: [
       'Data runs through code & services controlled by only you',
       'No ads, tracking, selling data, affliate links, nothing',
-      'Authentication via self soverign identity - and not passwords or email',
+      'Authentication via self sovereign identity - and not passwords or email',
       'Payments done via blockchain transactions'
     ],
     icon: FeatureIcons.privacy
@@ -72,9 +74,13 @@ const features: FeatureBoxProps[] = [
 
 export default function Index() {
   return (
-    <div className='p-5 lg:p-20'>
+    <div className='p-5 lg:p-20 relative' style={{
+      background: 'url(/noise_bg.svg)'
+    }}>
 
-      {/* <img src='/circle_blob.svg' className='absolute -top-72 -z-10'/> */}
+      <div style={{top:'-10vh',left:'50%'}} className=' -z-30 absolute w-80 h-80'>
+        {/* <GradientCircle/> */}
+      </div>
 
       <div className='grid grid-flow-row sm:grid-flow-col '>
         {/* intro */}
@@ -82,12 +88,12 @@ export default function Index() {
           {/* intro heading text */}
           <div className='text-center md:text-left'>
             <img src='/zomia_logo.svg' className='w-14 inline' />
-            <a href='#' className='inline rounded-full p-2 opacity-60 hover:opacity-100   ml-4  bg-gray-300  border-black text-lg duration-200'>α</a>
+            {/* <a href='#' className='inline rounded-full p-2 opacity-60 hover:opacity-100   ml-4  bg-gray-300  border-black text-lg duration-200'>α</a> */}
           </div>
           <h1 className='mt-10 text-center md:text-left text-5xl font-semibold'>
             The Privacy-First Disqus Alternative
           </h1>
-          <h2 className='text-center md:text-left mt-10 max-w-prose'>
+          <h2 className='text-center md:text-left mt-10 max-w-[50ch]'>
             Zomia is an open-source comment system built for the Web3 Era. It is flexible but powerful, while also giving you and your audience complete sovereignty over your data.
           </h2>
           <div className='mt-10 text-center md:text-left mb-10'>
@@ -101,8 +107,9 @@ export default function Index() {
           <img className='w-screen' src='/intro_image.svg' />
         </div>
       </div>
-      <div className='mt-32'>
+      <div className='mt-32 relative'>
         <h2 className='text-center text-3xl font-bold'>Features</h2>
+          <img src='/blob.svg' className='absolute'/>
         <div className='gap-12 relative w-full h-full  mt-10 p-10 rounded-md shadow-xl' style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
