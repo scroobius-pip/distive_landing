@@ -13,5 +13,9 @@
         font-family: 'Sen', serif;
     }
  
+    body {
+       @apply bg-sky-50;
+      
+    }
 
 }

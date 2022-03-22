@@ -80,7 +80,7 @@ export default function Index() {
         {/* intro */}
         <div className='col-span-1'>
           {/* intro heading text */}
-          <div>
+          <div className='text-center md:text-left'>
             <img src='/zomia_logo.svg' className='w-14 inline' />
             <a href='#' className='inline rounded-full p-2 opacity-60 hover:opacity-100   ml-4  bg-gray-300  border-black text-lg duration-200'>α</a>
           </div>
@@ -98,7 +98,7 @@ export default function Index() {
         </div>
         <div className='col-span-3'>
           {/* intro image */}
-          <img className='w-full' src='/intro_image.svg' />
+          <img className='w-screen' src='/intro_image.svg' />
         </div>
       </div>
       <div className='mt-32'>
@@ -106,6 +106,7 @@ export default function Index() {
         <div className='gap-12  mt-10 bg-black p-10 rounded-md shadow-xl' style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+          backgroundImage: 'url(/transparent_static.png)',
         }}>
           {/* features */}
           {features.map(feature => <FeatureBox key={feature.title} {...feature} />)}

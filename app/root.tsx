@@ -21,7 +21,7 @@ export const links: LinksFunction = () => [
 
 export default function App() {
   return (
-    <html className='bg-sky-50'  lang="en">
+    <html   lang="en">
       <head>
         <Meta />
         <Links />
