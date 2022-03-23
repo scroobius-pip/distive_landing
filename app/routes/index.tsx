@@ -76,7 +76,7 @@ const features: FeatureBoxProps[] = [
 export default function Index() {
   return (
     <div className='p-5 lg:p-20 relative' style={{
-      background: 'url(/noise_bg.svg)'
+      // background: 'url(/noise_bg.svg)'
     }}>
 
       <div style={{top:'-10vh',left:'50%'}} className=' -z-30 absolute w-80 h-80'>
@@ -115,7 +115,7 @@ export default function Index() {
         <div className='gap-12 relative w-full h-full  mt-10 p-10 rounded-md shadow-xl' style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          background: 'url(/noise.svg)', 
+          // background: 'url(/noise.svg)', 
           backgroundColor:'#141414'
         }}>
         
