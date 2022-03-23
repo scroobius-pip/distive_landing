@@ -1,4 +1,5 @@
 import GradientCircle from '~/components/GradientCircle';
+import IntroImage from '~/components/IntroImage';
 import * as FeatureIcons from '~/components/LandingIcons'
 
 interface FeatureBoxProps {
@@ -98,18 +99,19 @@ export default function Index() {
           </h2>
           <div className='mt-10 text-center md:text-left mb-10'>
             {/* CTA */}
-            <a className='py-3  font-medium shadow-md  px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/demo'>{`See Demo >`}</a>
+            <a className='py-3  font-medium shadow-md  px-4 border-black border-2 bg-white rounded-md relative duration-300 hover:-top-1 top-0' href='/demo'>{`See Demo >`}</a>
             <a className='py-3 font-medium shadow-md  px-4 ml-4  border-black text-white bg-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/getting-started'>{`Get Started >`}</a>
           </div>
         </div>
         <div className='col-span-3'>
           {/* intro image */}
-          <img className='w-screen' src='/intro_image.svg' />
+          {/* <img className='w-screen' src='/intro_image.svg' /> */}
+         <IntroImage/>
         </div>
       </div>
       <div className='mt-32 relative'>
         <h2 className='text-center text-3xl font-bold'>Features</h2>
-          <img src='/blob.svg' className='absolute'/>
+          {/* <img src='/blob.svg' className='absolute'/> */}
         <div className='gap-12 relative w-full h-full  mt-10 p-10 rounded-md shadow-xl' style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
