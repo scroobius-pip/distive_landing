@@ -88,8 +88,14 @@ export default function Index() {
         opacity: 0.1,
         mixBlendMode:'overlay'
       }}/>
-      <div className='absolute h-full w-full' style={{
-        background: 'url(/background3.svg)',
+      <div className='absolute hidden md:block none h-full w-full' style={{
+        background: 'url(/background7.svg)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        zIndex:-40
+      }}/>
+    <div className='absolute block md:hidden none h-full w-full' style={{
+        background: 'url(/background7_mobile.svg)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         zIndex:-40
