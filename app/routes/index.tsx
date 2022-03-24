@@ -85,7 +85,8 @@ export default function Index() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         zIndex: -30,
-        opacity:0.1
+        opacity: 0.1,
+        mixBlendMode:'overlay'
       }}/>
       <div className='absolute h-full w-full' style={{
         background: 'url(/background3.svg)',
