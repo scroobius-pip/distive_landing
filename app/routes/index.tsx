@@ -72,7 +72,7 @@ const features: FeatureBoxProps[] = [
 ]
 
 const CTA = () => <>
-  <a className='py-3 bg-white  font-medium shadow-md px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/demo'>{`See Demo >`}</a>
+  <a target={'_blank'} className='py-3 bg-white  font-medium shadow-md px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='https://zomia-next-example-simdi-jinkins.vercel.app/?channel=books'>{`See Demo >`}</a>
   <a className='py-3 font-medium shadow-md  px-4 ml-4  border-black text-white bg-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='/getting-started'>{`Get Started >`}</a>
 </>
 
