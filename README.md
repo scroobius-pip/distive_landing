@@ -1,1 +1,1 @@
-Frontend for zomia
+Landing page for distive
