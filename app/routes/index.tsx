@@ -80,14 +80,7 @@ const CTA = () => <>
 export default function Index() {
   return (
     <div className=' relative' >
-      {/* <div className='absolute h-full w-full' style={{
-        background: 'url(/nnnoise.svg)',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        zIndex: -30,
-        opacity: 0.1,
-        mixBlendMode:'overlay'
-      }}/> */}
+    
 
       <div className='p-5 lg:p-20'>
         <div className=' w-full '>
@@ -99,10 +92,10 @@ export default function Index() {
               
               {/* <a href='#' className='inline rounded-full p-2 opacity-60 hover:opacity-100   ml-4  bg-gray-300  border-black text-lg duration-200'>α</a> */}
             </div>
-            <h1 className='mt-10 text-center text-5xl font-semibold'>
+            <h1 className='mt-20 text-center text-5xl font-semibold'>
               The Privacy-First Disqus Alternative
             </h1>
-            <h2 className='text-center mt-10  max-w-[80ch] m-auto '>
+            <h2 className='text-center mt-5  max-w-[80ch] m-auto '>
               Distive is an open-source comment system built for the Web3 Era. It is flexible but powerful, while also giving you and your audience complete sovereignty over your data.
             </h2>
             <div className='mt-20 text-center '>
@@ -145,7 +138,7 @@ export default function Index() {
 
             </div>
           </div>
-          <div className='mt-[10vh]'>
+          <div className='mt-[10vh] relative left-20'>
             {/* intro image */}
             <img className='max-w-4xl w-full h-auto aspect-square  m-auto' src='/intro_image.svg' />
             {/* <IntroImage/> */}
