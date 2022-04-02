@@ -138,7 +138,7 @@ export default function Index() {
 
             </div>
           </div>
-          <div className='mt-[10vh] relative left-20'>
+          <div className='mt-[10vh]'>
             {/* intro image */}
             <img className='max-w-4xl w-full h-auto aspect-square  m-auto' src='/intro_image.svg' />
             {/* <IntroImage/> */}
