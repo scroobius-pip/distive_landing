@@ -9,7 +9,7 @@ interface FeatureBoxProps {
 }
 
 function FeatureBox({ title, features, icon }: FeatureBoxProps) {
-  return <div className='text-white ' >
+  return <div className='text-black ' >
 
     {/* feature container */}
     <div className='relative -left-4' >
@@ -80,97 +80,136 @@ const CTA = () => <>
 export default function Index() {
   return (
     <div className=' relative' >
-      <div className='absolute h-full w-full' style={{
+      {/* <div className='absolute h-full w-full' style={{
         background: 'url(/nnnoise.svg)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         zIndex: -30,
         opacity: 0.1,
         mixBlendMode:'overlay'
-      }}/>
-      <div className='absolute hidden md:block none h-full w-full' style={{
-        background: 'url(/background7.svg)',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        zIndex:-40
-      }}/>
-    <div className='absolute block md:hidden none h-full w-full' style={{
-        background: 'url(/background7_mobile.svg)',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        zIndex:-40
-      }}/>
+      }}/> */}
 
       <div className='p-5 lg:p-20'>
-        <div className='grid grid-flow-row sm:grid-flow-col '>
+        <div className=' w-full '>
           {/* intro */}
-          <div className='col-span-1'>
+          <div className='relative w-full'>
             {/* intro heading text */}
-            <div className='text-center md:text-left'>
-              <img src='/zomia_logo.svg' className='w-14 inline' />
+            <div className='text-center'>
+              <img src='/distive_logo.svg' className='w-32 inline' />
+              
               {/* <a href='#' className='inline rounded-full p-2 opacity-60 hover:opacity-100   ml-4  bg-gray-300  border-black text-lg duration-200'>α</a> */}
             </div>
-            <h1 className='mt-10 text-center md:text-left text-5xl font-semibold'>
+            <h1 className='mt-10 text-center text-5xl font-semibold'>
               The Privacy-First Disqus Alternative
             </h1>
-            <h2 className='text-center md:text-left mt-10 max-w-[50ch]'>
-              Zomia is an open-source comment system built for the Web3 Era. It is flexible but powerful, while also giving you and your audience complete sovereignty over your data.
+            <h2 className='text-center mt-10  max-w-[80ch] m-auto '>
+              Distive is an open-source comment system built for the Web3 Era. It is flexible but powerful, while also giving you and your audience complete sovereignty over your data.
             </h2>
-            <div className='mt-10 text-center md:text-left mb-10'>
+            <div className='mt-20 text-center '>
               {/* CTA */}
               <CTA />
             </div>
+            <div
+              style={{
+                position: 'absolute',
+                margin: 'auto',
+                filter: 'blur(30px) contrast(2)',
+                overflow: 'hidden',
+                width: '100%',
+                height: '100%',
+                zIndex: -30,
+                mixBlendMode: 'color-burn'
+              }}
+            >
+              <div
+                className='animate-blob_anim bg-black absolute left-1/2 top-0 rounded-full'
+                style={{
+                  width: '30vw',
+                  height: '20vw'
+                }}
+              />
+              <div
+                className='animate-blob_anim bg-blue-300 absolute right-1/3 top-2/3 rounded-full'
+                style={{
+                  width: '20vw',
+                  height: '10vw'
+                }}
+              />
+              <div
+                className='animate-blob_anim bg-green-400 absolute right-1/4 top-1/3 rounded-full'
+                style={{
+                  width: '15vw',
+                  height: '15vw'
+                }}
+              />
+
+            </div>
           </div>
-          <div className='col-span-3 duration-200'>
+          <div className='mt-[10vh]'>
             {/* intro image */}
-            <img className='w-screen' src='/intro_image.svg' />
+            <img className='max-w-4xl w-full h-auto aspect-square  m-auto' src='/intro_image.svg' />
             {/* <IntroImage/> */}
           </div>
         </div>
         <div className='mt-32 relative'>
           <h2 className='text-center text-3xl font-bold'>Features</h2>
           {/* <img src='/blob.svg' className='absolute'/> */}
+          <div
+            style={{
+              position: 'absolute',
+              margin: 'auto',
+              filter: 'blur(50px) contrast(2)',
+              overflow: 'hidden',
+              width: '100%',
+              height: '100%',
+              zIndex: -30,
+              mixBlendMode: 'color-burn',
+              opacity: 0.7
+            }}
+          >
 
-          <div className='gap-12 relative w-full h-full  mt-10 p-10 rounded-md shadow-xl' style={{
+            <div
+              className=' bg-black invisible lg:visible absolute left-0 top-1/4 rounded-full'
+              style={{
+                width: '15vw',
+                height: '20vw'
+              }}
+            />
+  
+            <div
+              className=' bg-green-900 invisible lg:visible absolute left-1/4 top-1/4 rounded-full'
+              style={{
+                width: '15vw',
+                height: '20vw'
+              }}
+            />
+             <div
+              className=' bg-blue-900 invisible lg:visible absolute right-1/4 top-1/4 rounded-full'
+              style={{
+                width: '15vw',
+                height: '20vw'
+              }}
+            />
+            <div
+              className=' bg-red-900 invisible lg:visible absolute right-0 top-1/4 rounded-full'
+              style={{
+                width: '15vw',
+                height: '20vw'
+              }}
+            />
+          </div>
+          <div className='gap-12  relative w-full h-full  mt-10 p-10 rounded-md shadow-lg' style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            // background: 'url(/noise.svg)', 
-            backgroundColor: '#141414'
+            // background: 'url(/noise.svg)'EDF2F4, 141414
+            backgroundColor: '#edf2f4e6',
+
           }}>
-            <svg className='absolute w-full h-full'
-
-
-              opacity="0.11"
-            ><defs>
-                <filter id="feature-filter" x="-20%" y="-20%" width="140%" height="140%"
-                  filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse"
-                  color-interpolation-filters="linearRGB">
-
-                  <feTurbulence
-                    type="fractalNoise"
-                    baseFrequency="10"
-                    numOctaves="400"
-
-                    stitchTiles="stitch" x="0%" y="0%"
-                    width="100%" height="100%" result="turbulence">
-
-                  </feTurbulence>
-                  <feSpecularLighting surfaceScale="40" specularConstant="3" specularExponent="20"
-                    lighting-color="hsl(23, 0%, 100%)"
-                    x="0%" y="0%" width="100%" height="100%" in="turbulence" result="specularLighting">
-                    <feDistantLight azimuth="30" elevation="200">
-
-                    </feDistantLight>
-                  </feSpecularLighting>
-
-                </filter></defs><rect width="100%" height="100%" fill="none"></rect>
-              <rect width="100%" height="100%" fill="hsl(23, 0%, 100%)" filter="url(#feature-filter)"></rect>
-            </svg>
             {/* features */}
             {features.map(feature => <FeatureBox key={feature.title} {...feature} />)}
           </div>
         </div>
-        <div className='mt-20 text-center'>
+        <div className='mt-20 text-center '>
           {/* CTA */}
           <CTA />
         </div>

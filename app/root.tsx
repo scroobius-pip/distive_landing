@@ -11,7 +11,7 @@ import styles from './tailwind.css';
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Zomia - The Open Comment System",
+  title: "Distive - The Open Comment System",
   viewport: "width=device-width,initial-scale=1",
 });
 
