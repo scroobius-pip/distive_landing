@@ -114,22 +114,23 @@ export default function Index() {
                 mixBlendMode: 'color-burn'
               }}
             >
+              
               <div
-                className='animate-blob_anim bg-black absolute left-1/2 top-0 rounded-full'
+                className='animate-blob_anim hidden md:block bg-black absolute left-1/2 top-0 rounded-full'
                 style={{
                   width: '30vw',
                   height: '20vw'
                 }}
               />
               <div
-                className='animate-blob_anim bg-blue-300 absolute right-1/3 top-2/3 rounded-full'
+                className='animate-blob_anim hidden md:block bg-blue-300 absolute right-1/3 top-2/3 rounded-full'
                 style={{
                   width: '20vw',
                   height: '10vw'
                 }}
               />
               <div
-                className='animate-blob_anim bg-green-400 absolute right-1/4 top-1/3 rounded-full'
+                className='animate-blob_anim  hidden md:block bg-green-400 absolute right-1/4 top-1/3 rounded-full'
                 style={{
                   width: '15vw',
                   height: '15vw'
