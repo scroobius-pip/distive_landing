@@ -171,21 +171,21 @@ export default function Index() {
             />
   
             <div
-              className=' bg-green-900 invisible lg:visible absolute left-1/4 top-1/4 rounded-full'
+              className=' bg-green-900  hidden md:block absolute left-1/4 top-1/4 rounded-full'
               style={{
                 width: '15vw',
                 height: '20vw'
               }}
             />
              <div
-              className=' bg-blue-900 invisible lg:visible absolute right-1/4 top-1/4 rounded-full'
+              className=' bg-blue-900  hidden md:block absolute right-1/4 top-1/4 rounded-full'
               style={{
                 width: '15vw',
                 height: '20vw'
               }}
             />
             <div
-              className=' bg-red-900 invisible lg:visible absolute right-0 top-1/4 rounded-full'
+              className=' bg-red-900  hidden md:block absolute right-0 top-1/4 rounded-full'
               style={{
                 width: '15vw',
                 height: '20vw'
