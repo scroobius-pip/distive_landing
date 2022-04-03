@@ -5,34 +5,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
 
 @layer base {
-    * {
-        font-family: 'Sen', serif;
+  * {
+    font-family: 'Sen', serif;
+  }
+
+  body {
+   
+    background: url(/noise_bg.svg);
+  }
+
+  @media (min-width: 768px) {
+    body {
+      background: url(/noise_bg.svg);
     }
 
-    body {
-        /* @apply bg-sky-50; */
-        /* @apply bg-white; */
-        /* background-color: #F9F9F9; */
-        /* background-color: #EDF2F4; */
-        background: url(/noise_bg.svg);
-      }
-      
-      @media (min-width: 768px) {
-     body {
-      background: url(/noise_bg.svg);
-     }
-        
-     }
+  }
 
 }
 
-@keyframes blob-anim{
-    0%{
-      transform:translateX(5vw);
-      width: 25vw;
+@keyframes blob-anim {
+  0% {
+    transform: translateX(5vw);
+    width: 25vw;
     height: 28vw;
-    }
-    100%{
-      transform:translatey(5vw);
-    }
   }
+
+  100% {
+    transform: translatey(5vw);
+  }
+}
