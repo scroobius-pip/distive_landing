@@ -12,8 +12,9 @@
     body {
         /* @apply bg-sky-50; */
         /* @apply bg-white; */
-        background-color: #F9F9F9;
+        /* background-color: #F9F9F9; */
         /* background-color: #EDF2F4; */
+        background: url(/noise_bg.svg);
       }
       
       @media (min-width: 768px) {

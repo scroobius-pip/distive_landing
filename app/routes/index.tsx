@@ -80,7 +80,7 @@ const CTA = () => <>
 export default function Index() {
   return (
     <div className=' relative' >
-    
+
 
       <div className='p-5 lg:p-20'>
         <div className=' w-full '>
@@ -89,7 +89,7 @@ export default function Index() {
             {/* intro heading text */}
             <div className='text-center'>
               <img src='/distive_logo.svg' className='w-32 inline' />
-              
+
               {/* <a href='#' className='inline rounded-full p-2 opacity-60 hover:opacity-100   ml-4  bg-gray-300  border-black text-lg duration-200'>α</a> */}
             </div>
             <h1 className='mt-20 text-center text-5xl font-semibold'>
@@ -114,7 +114,7 @@ export default function Index() {
                 mixBlendMode: 'color-burn'
               }}
             >
-              
+
               <div
                 className='animate-blob_anim hidden md:block bg-black absolute left-1/2 top-0 rounded-full'
                 style={{
@@ -158,52 +158,54 @@ export default function Index() {
               height: '100%',
               zIndex: -30,
               mixBlendMode: 'color-burn',
-              opacity: 0.7
+              opacity: 0.5,
+
             }}
           >
+            <div className='gap-12 grid w-full h-full  mt-10 p-10 ' style={{
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            }}>
+              <div
+                className=' bg-black rounded-full'
+                style={{
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
 
-            <div
-              className=' bg-black invisible lg:visible absolute left-0 top-1/4 rounded-full'
-              style={{
-                width: '15vw',
-                height: '20vw'
-              }}
-            />
-  
-            <div
-              className=' bg-green-900  hidden md:block absolute left-1/4 top-1/4 rounded-full'
-              style={{
-                width: '15vw',
-                height: '20vw'
-              }}
-            />
-             <div
-              className=' bg-blue-900  hidden md:block absolute right-1/4 top-1/4 rounded-full'
-              style={{
-                width: '15vw',
-                height: '20vw'
-              }}
-            />
-            <div
-              className=' bg-red-900  hidden md:block absolute right-0 top-1/4 rounded-full'
-              style={{
-                width: '15vw',
-                height: '20vw'
-              }}
-            />
+              <div
+                className=' bg-green-900 rounded-full'
+                style={{
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
+              <div
+                className=' bg-blue-900  rounded-full'
+                style={{
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
+              <div
+                className=' bg-red-900 rounded-full'
+                style={{
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
+            </div>
           </div>
-          <div className='gap-12  relative w-full h-full  mt-10 p-10 rounded-md shadow-lg' style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            // background: 'url(/noise.svg)'EDF2F4, 141414
-            backgroundColor: '#edf2f4e6',
-
-          }}>
+          <div className='gap-12 grid relative w-full h-full  mt-10 p-10 rounded-md shadow-lg'
+            style={{
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              backgroundColor: '#edf2f4e6',
+            }}>
             {/* features */}
             {features.map(feature => <FeatureBox key={feature.title} {...feature} />)}
           </div>
         </div>
-        <div className='mt-20 text-center '>
+        <div className='mt-20 mb- text-center '>
           {/* CTA */}
           <CTA />
         </div>
