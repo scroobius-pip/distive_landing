@@ -5,12 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
 
 @layer base {
-  * {
-    font-family: 'Sen', serif;
+  html {
+    font-family: 'Sen', system-ui, sans-serif
   }
 
   body {
-   
     background: url(/noise_bg.svg);
   }
 
@@ -23,14 +22,3 @@
 
 }
 
-@keyframes blob-anim {
-  0% {
-    transform: translateX(5vw);
-    width: 25vw;
-    height: 28vw;
-  }
-
-  100% {
-    transform: translatey(5vw);
-  }
-}

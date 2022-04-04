@@ -10,7 +10,6 @@ interface FeatureBoxProps {
 
 function FeatureBox({ title, features, icon }: FeatureBoxProps) {
   return <div className='text-black ' >
-
     {/* feature container */}
     <div className='relative -left-4' >
       {icon}
@@ -111,7 +110,7 @@ export default function Index() {
                 width: '100%',
                 height: '100%',
                 zIndex: -30,
-                mixBlendMode: 'color-burn'
+                mixBlendMode: 'color-burn' 
               }}
             >
 
