@@ -92,7 +92,8 @@ export default function Index() {
               {/* <a href='#' className='inline rounded-full p-2 opacity-60 hover:opacity-100   ml-4  bg-gray-300  border-black text-lg duration-200'>α</a> */}
             </div>
             <h1 className='mt-20 text-center text-5xl font-semibold'>
-              The Privacy-First Disqus Alternative
+              {/* The Privacy-First Disqus Alternative */}
+              Self Sovereign Audiences
             </h1>
             <h2 className='text-center mt-5  max-w-[80ch] m-auto '>
               Distive is an open-source comment system built for the Web3 Era. It is flexible but powerful, while also giving you and your audience complete sovereignty over your data.
