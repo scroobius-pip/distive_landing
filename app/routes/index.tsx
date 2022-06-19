@@ -72,7 +72,7 @@ const features: FeatureBoxProps[] = [
 
 const CTA = () => <>
   <a target={'_blank'} className='py-3 bg-white  font-medium shadow-md px-4 border-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='https://nextjsexample.distive.com/?channel=books'>{`See Demo >`}</a>
-  <a className='py-3 font-medium shadow-md  px-4 ml-4  border-black text-white bg-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='https://github.com/scroobius-pip/Distive'>{`Get Started >`}</a>
+  <a className='py-3 font-medium shadow-md  px-4 ml-4  border-black text-white bg-black border-2 rounded-md relative duration-300 hover:-top-1 top-0' href='https://dashboard.distive.com'>{`Get Started >`}</a>
 </>
 
 
