@@ -145,7 +145,7 @@ export default function Index() {
             {/* <IntroImage/> */}
           </div>
         </div>
-        <div className='mt-32 relative'>
+        <div className='mt-32 relative max-w-screen-2xl m-auto'>
           <h2 className='text-center text-3xl font-bold'>Features</h2>
           {/* <img src='/blob.svg' className='absolute'/> */}
           <div
